@@ -11,3 +11,7 @@ function execute(someFunction, value) {
 
 execute(say, "hello");
 execute(function(word) { console.log(word) }, "Hi there!");
+
+database.query("SELECT * FROM hugetable", function(rows) {
+  var result = rows;
+});
